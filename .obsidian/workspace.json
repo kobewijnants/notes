@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "school/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
+                "file": "Personal/Books.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "school/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
+                "file": "Personal/Books.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "school/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
+                "file": "Personal/Books.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "school/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md"
+                "file": "Personal/Books.md"
               }
             }
           }
@@ -148,15 +148,16 @@
   },
   "active": "f4e9bff416498d85",
   "lastOpenFiles": [
+    "School/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
+    "Personal/Books.md",
+    "Personal",
     "README.md",
-    "school/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
-    "school/jaar 2/Computersystemen 2 - ISB/labo",
-    "school/jaar 2/Computersystemen 2 - ISB/powershell",
-    "school/jaar 2/Computersystemen 2 - ISB",
-    "school/jaar 2",
-    "Untitled",
+    "School/jaar 2/Computersystemen 2 - ISB/labo",
+    "School/jaar 2/Computersystemen 2 - ISB/powershell",
+    "School/jaar 2/Computersystemen 2 - ISB",
+    "School/jaar 2",
     "school/Untitled.md",
     "Untitled.md",
-    "school"
+    "School"
   ]
 }
