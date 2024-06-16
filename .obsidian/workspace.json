@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "43dea7c7c07adc09",
+        "id": "38990a5bd5aff084",
         "type": "tabs",
         "children": [
           {
-            "id": "f4e9bff416498d85",
+            "id": "3e8bf731eccd1c30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal/Books.md",
+                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Personal/Books.md",
+                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Personal/Books.md",
+                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Personal/Books.md"
+                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md"
               }
             }
           }
@@ -146,10 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f4e9bff416498d85",
+  "active": "3e8bf731eccd1c30",
   "lastOpenFiles": [
-    "School/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
+    "School/jaar 2/Management 2/Examen info.md",
+    "Cheat-Sheets/Docker/Container -> VPN routing.md",
+    "Cheat-Sheets/Docker",
+    "Cheat-Sheets/Untitled.md",
+    "Untitled",
+    "Cheat-Sheets",
+    "School/jaar 2/Management 2/Examen info.md~",
+    "School/jaar 2/Management 2/test.md",
     "Personal/Books.md",
+    "School/jaar 2/Management 2",
+    "School/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
     "Personal",
     "README.md",
     "School/jaar 2/Computersystemen 2 - ISB/labo",
@@ -157,7 +166,6 @@
     "School/jaar 2/Computersystemen 2 - ISB",
     "School/jaar 2",
     "school/Untitled.md",
-    "Untitled.md",
-    "School"
+    "Untitled.md"
   ]
 }
