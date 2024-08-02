@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "38990a5bd5aff084",
+        "id": "d808f41807024784",
         "type": "tabs",
         "children": [
           {
-            "id": "3e8bf731eccd1c30",
+            "id": "ba40a44f99a940d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
+                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
+                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md",
+                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheat-Sheets/Docker/Container -> VPN routing.md"
+                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md"
               }
             }
           }
@@ -146,9 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e8bf731eccd1c30",
+  "active": "ba40a44f99a940d8",
   "lastOpenFiles": [
+    "Cheat-Sheets/Linux/Apt-Cacher-NG.md",
+    "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
+    "Cheat-Sheets/Proxmox/Lxc",
+    "Cheat-Sheets/Proxmox",
+    "Personal/SIEM/Installation.md",
+    "Cheat-Sheets/Linux",
     "School/jaar 2/Management 2/Examen info.md",
+    "Personal/SIEM",
+    "Personal/Untitled.canvas",
     "Cheat-Sheets/Docker/Container -> VPN routing.md",
     "Cheat-Sheets/Docker",
     "Cheat-Sheets/Untitled.md",
@@ -161,10 +169,6 @@
     "School/jaar 2/Computersystemen 2 - ISB/powershell/Inleiding.md",
     "Personal",
     "README.md",
-    "School/jaar 2/Computersystemen 2 - ISB/labo",
-    "School/jaar 2/Computersystemen 2 - ISB/powershell",
-    "School/jaar 2/Computersystemen 2 - ISB",
-    "School/jaar 2",
     "school/Untitled.md",
     "Untitled.md"
   ]
