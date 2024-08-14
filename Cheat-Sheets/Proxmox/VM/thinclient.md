@@ -1,3 +1,11 @@
+## Open source solutions
+
+https://thinstation.github.io/thinstation/
+
+https://openthinclient.com/en/
+
+## Manual
+
 To create a thin client for your Proxmox server, you'll need to set up a system where a minimal client device can connect to and utilize virtual machines (VMs) hosted on your Proxmox server. This process involves setting up the thin client hardware, configuring the network, installing and configuring the thin client operating system, and ensuring seamless access to your Proxmox-hosted VMs.
 
 Below is a detailed guide to help you achieve this:
