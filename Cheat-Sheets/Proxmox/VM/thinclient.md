@@ -99,3 +99,75 @@ Replace `user` with your actual username.
 
 ### Summary
 With this setup, your Dell Wyse 3040 will boot into a lightweight Linux environment, automatically start a script that lets you choose a VM, and open a VNC connection to the selected VM. This approach should provide you with a simple, user-friendly interface to access your Proxmox VMs.
+
+
+## Installation script on debian machine
+
+```bash
+#!/bin/bash
+
+# Ensure the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+
+# Variables
+USER_NAME="your_user"  # Replace with your actual username
+PROXMOX_IP="192.168.1.100"  # Replace with your Proxmox server IP
+SCRIPT_PATH="/home/$USER_NAME/vm_menu.sh"
+
+# Update package list and install required packages
+apt-get update
+apt-get install -y tigervnc-viewer whiptail
+
+# Create the VM selection script
+cat <<EOF > $SCRIPT_PATH
+#!/bin/bash
+
+# VM selection menu
+VM=\$(whiptail --title "VM Selection Menu" --menu "Choose a VM to connect to:" 15 60 4 \\
+"1" "VM 1" \\
+"2" "VM 2" \\
+"3" "VM 3" \\
+"4" "VM 4" 3>&1 1>&2 2>&3)
+
+case \$VM in
+    1)
+        vncviewer $PROXMOX_IP:5901
+        ;;
+    2)
+        vncviewer $PROXMOX_IP:5902
+        ;;
+    3)
+        vncviewer $PROXMOX_IP:5903
+        ;;
+    4)
+        vncviewer $PROXMOX_IP:5904
+        ;;
+    *)
+        echo "Invalid option."
+        ;;
+esac
+EOF
+
+# Make the VM selection script executable
+chmod +x $SCRIPT_PATH
+
+# Add the script to .bashrc to run at login
+echo "$SCRIPT_PATH" >> /home/$USER_NAME/.bashrc
+
+# Optionally enable auto-login (uncomment if needed)
+# Auto-login configuration for Debian-based systems with LightDM
+#cat <<EOF > /etc/lightdm/lightdm.conf
+#[SeatDefaults]
+#autologin-user=$USER_NAME
+#autologin-user-timeout=0
+#EOF
+
+# Display a message indicating the setup is complete
+echo "Setup complete! Reboot your system to start using the VM selection menu."
+
+# Optionally reboot the system to apply changes (uncomment if needed)
+#reboot
+```
