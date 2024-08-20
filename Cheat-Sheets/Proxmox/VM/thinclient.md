@@ -171,3 +171,61 @@ echo "Setup complete! Reboot your system to start using the VM selection menu."
 # Optionally reboot the system to apply changes (uncomment if needed)
 #reboot
 ```
+
+## Proxmox setup
+
+To enable VNC connections to your VMs from your Dell Wyse 3040 device, you’ll need to configure the Proxmox server accordingly. Here’s a step-by-step guide on what you need to do on the Proxmox side:
+
+### 1. Ensure VNC is Enabled on Proxmox
+
+Proxmox uses VNC by default for console access to VMs. However, by default, this access is usually bound to the web interface, and not directly exposed via VNC ports. To make it accessible from an external VNC viewer, you'll need to ensure each VM has a VNC port open.
+
+### 2. Assign Static VNC Ports to VMs
+
+You need to assign specific VNC ports to each VM manually. Follow these steps:
+
+1. **SSH into Your Proxmox Server**:
+   Access your Proxmox server via SSH.
+
+2. **Locate the Configuration File for the VM**:
+   The configuration files for VMs are located in `/etc/pve/qemu-server/`. Each VM has a configuration file named `<VMID>.conf`, where `<VMID>` is the ID of the VM.
+
+   Example:
+   ```bash
+   nano /etc/pve/qemu-server/101.conf
+   ```
+
+3. **Assign a Static VNC Port**:
+   Add or modify the `vncport` parameter in the VM's configuration file to assign a static VNC port. For example:
+
+   ```bash
+   args: -vnc 0.0.0.0:1
+   ```
+   This line will expose the VNC server on port `5901` (`5900 + 1`).
+
+   You can assign different ports for different VMs like so:
+   - VM 1: `args: -vnc 0.0.0.0:1` (port `5901`)
+   - VM 2: `args: -vnc 0.0.0.0:2` (port `5902`)
+   - VM 3: `args: -vnc 0.0.0.0:3` (port `5903`)
+   - VM 4: `args: -vnc 0.0.0.0:4` (port `5904`)
+
+4. **Save and Exit**:
+   Save the file and exit the editor.
+
+5. **Restart the VM**:
+   After editing the configuration, restart the VM for the changes to take effect:
+   ```bash
+   qm stop <VMID>
+   qm start <VMID>
+   ```
+
+### 3. Configure Firewall (If Necessary)
+If you have a firewall configured on Proxmox or your network, make sure that the VNC ports (e.g., `5901`, `5902`, etc.) are open so that the Dell Wyse 3040 can connect to them.
+
+### 4. Test VNC Access
+1. From a machine with a VNC client installed, try connecting to the Proxmox server using the IP and the specified port, e.g., `192.168.1.100:5901`.
+
+2. If everything is configured correctly, you should be able to connect to the VM's console via VNC.
+
+### Summary
+On the Proxmox side, you need to ensure that each VM has a static VNC port assigned and that these ports are accessible from your network. This involves editing the VM configuration files and possibly adjusting firewall settings. Once done, the setup on your Dell Wyse 3040 should be able to connect directly to the VMs via VNC.
