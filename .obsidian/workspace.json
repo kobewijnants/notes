@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
+                "file": "School/jaar 3/Netwerken-3/examen/firewall-vragen.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
+                "file": "School/jaar 3/Netwerken-3/examen/firewall-vragen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
+                "file": "School/jaar 3/Netwerken-3/examen/firewall-vragen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md"
+                "file": "School/jaar 3/Netwerken-3/examen/firewall-vragen.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "ba40a44f99a940d8",
   "lastOpenFiles": [
-    "Cheat-Sheets/Linux/Apt-Cacher-NG.md",
+    "School/jaar 3/Netwerken-3/examen/firewall-vragen.md~",
+    "School/jaar 3/Netwerken-3/examen/examen.md",
     "Cheat-Sheets/Proxmox/Lxc/Helper scripts.md",
+    "2024-09-15.md",
+    "Cheat-Sheets/Linux/Apt-Cacher-NG.md",
     "Cheat-Sheets/Proxmox/Lxc",
     "Cheat-Sheets/Proxmox",
     "Personal/SIEM/Installation.md",
